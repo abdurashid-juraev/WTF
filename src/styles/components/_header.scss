@@ -1,0 +1,41 @@
+.navbar{
+  background: transparent;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  width: 125px;
+  height: 50px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+.nav-link {
+  color: $font-black !important;
+  padding: 0 !important;
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.5s;
+  &:hover {
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      top: 105%;
+      left: 0;
+      background: #000;
+    }
+  }
+}
+.carousel-item {
+  img {
+    height: 600px !important;
+    object-fit: cover;
+    object-position: center;
+  }
+}
